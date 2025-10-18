@@ -37,7 +37,8 @@ def analyze_image_with_gemini(client: genai.Client, image: Image, prompt: str):
     except Exception as e:
         print(f"[오류] 예상치 못한 오류 발생: {e}")
 
-# --- 메인 실행 루프 ---
+
+
 def main():
     if not os.getenv("GEMINI_KEY"):
         print("오류: GEMINI_API_KEY 환경 변수가 설정되지 않았습니다. API 키를 설정해 주세요.")
