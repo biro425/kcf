@@ -1,5 +1,4 @@
-import '../styles/globals.css'
-
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+// Placeholder: Next.js app file removed for Expo conversion. Keep as empty export for reference.
+export default function NextAppPlaceholder() {
+  return null
 }

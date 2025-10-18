@@ -1,4 +1,2 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
-  reactStrictMode: true,
-}
+// Next.js config removed for Expo project. File retained only as reference.
+
