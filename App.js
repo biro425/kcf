@@ -6,6 +6,7 @@ import AboutScreen from './screens/AboutScreen';
 import ContactScreen from './screens/ContactScreen';
 import DashboardScreen from './screens/DashboardScreen';
 import { StatusBar } from 'expo-status-bar';
+import { Platform } from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,4 +22,13 @@ export default function App() {
       <StatusBar style="auto" />
     </NavigationContainer>
   );
+}
+
+if (Platform.OS === 'web') {
+  const rootElement = document.getElementById('root');
+  const { createRoot } = require('react-dom/client');
+  const root = createRoot(rootElement);
+  root.render(<App />);
+} else {
+  registerRootComponent(App);
 }
